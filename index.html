@@ -9,55 +9,52 @@
       href="assets/icons8-calculator-16.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
     <main>
       <div class="mainContainer">
-        <div id="contentArea">
-          <textarea name="" id="contentDisplay"></textarea>
-        </div>
-        <div class="btn">
-          <div class="operators" id="optr1">
-            <button class="horizOperators">C</button>
-            <button class="horizOperators">
-              <img src="assets/Division icon.png" alt="">
-            </button>
-            <button class="horizOperators">
-              <img src="assets/Multiplication icon.png" alt="">
-            </button>
-            <button class="horizOperators">
-              <img src="assets/clear icon.png" alt="">
-            </button>
-          </div>
-          <div class="operators" id="optr2">
-            <button class="vertioperator">
-              <img src="assets/minus icon.png" alt="">
-            </button>
-            <button class="vertioperator">
-              <img src="assets/addition icon.png" alt="">
-            </button>
-            <button class="vertioperator">
-              <img src="assets/equal icon.png" alt="">
-            </button>
-          </div>
-          <div class="operators" id="optr3"></div>
-          <div class="numbers">
-            <button class="numbers">0</button>
-            <button class="numbers">1</button>
-            <button class="numbers">2</button>
-            <button class="numbers">3</button>
-            <button class="numbers">4</button>
-            <button class="numbers">5</button>
-            <button class="numbers">6</button>
-            <button class="numbers">7</button>
-            <button class="numbers">8</button>
-            <button class="numbers">9</button>
-            <button class="numbers">%</button>
-            <button class="numbers">.</button>
-          </div>
+        <div class="editor" contenteditable="true" id="editor"></div>
+        <div class="keys">
+          <button class="btn operator action">C</button>
+          <button class="btn operator">
+            <img src="assets/Division icon.png" alt="">
+          </button>
+          <button class="btn operator">
+            <img src="assets/Multiplication icon.png" alt="">
+          </button>
+          <button class="btn operator clear">
+            <img src="assets/Clear icon.png" alt="">
+          </button>
+
+          <button class="btn num">7</button>
+          <button class="btn num">8</button>
+          <button class="btn num">9</button>
+          <button class="btn operator">
+            <img src="assets/minus icon.png" alt="">
+          </button>
+
+          <button class="btn num">4</button>
+          <button class="btn num">5</button>
+          <button class="btn num">6</button>
+          <button class="btn operator">
+            <img src="assets/addition icon.png" alt="">
+          </button>
+
+          <button class="btn num">1</button>
+          <button class="btn num">2</button>
+          <button class="btn num">3</button>
+          <button class="btn equal" id="equal">
+            <img src="assets/equal icon.png" alt="">
+          </button>
+
+          <button class="btn num percentage">%</button>
+          <button class="btn num zero">0</button>
+          <button class="btn num">.</button>
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
